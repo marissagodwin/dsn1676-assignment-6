@@ -44,7 +44,7 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
-  transition: all 12s linear;
+  transition: all 1s linear;
 }
 
 .panel {
@@ -102,7 +102,7 @@ div {
 }
 
 .js-move {
-    left: 600px;  
+    right: -160px;  
 }
 
 .js-collapse-expand {
