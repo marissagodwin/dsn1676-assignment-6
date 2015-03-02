@@ -8,6 +8,7 @@ body {
 
   background-color: #fff;
   border: 1px solid #ccc;
+
 }
 
 section {
@@ -15,6 +16,7 @@ section {
   position: relative;
 
   border-bottom: 1px solid #ccc;
+  overflow: hidden;
 }
 
 section:nth-child(5) {
@@ -45,6 +47,7 @@ div {
   background-color: hotpink;
   transform: rotate(45deg);
   transition: all 1s linear;
+  
 }
 
 .panel {
