@@ -73,8 +73,8 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
   background-color: orange;
+  position: absolute;
 }
 
 .list {
@@ -110,4 +110,27 @@ div {
 
 .js-collapse-expand {
     max-height: 0em;
+}
+
+.js-circle-bounce {
+    animation: js-circle-bounce 3s linear;
+}
+
+@keyframes js-circle-bounce {
+    0% {
+        top: -10px;
+        right: 20px;
+    }
+    25% {
+        top: 20px;
+        right: 80px;
+    }
+    75% {
+        top: -20px;
+        right: 100px;
+    }
+    100% {
+        top: 40px;
+        right: 130px;
+    }
 }
