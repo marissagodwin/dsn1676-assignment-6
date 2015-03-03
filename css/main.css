@@ -100,7 +100,17 @@ div {
 }
 
 .new-li {
+    -webkit-animation: js-append 1s ease-in;
     animation: js-append 1s ease-in;
+}
+
+@-webkit-keyframes js-append {
+    0% {
+        max-height: 0px;
+    }
+    100% {
+       max-height: 4em;
+    }
 }
 
 @keyframes js-append {
@@ -125,7 +135,27 @@ div {
 }
 
 .js-circle-bounce {
+    -webkit-animation: js-circle-bounce 3s linear;
     animation: js-circle-bounce 3s linear;
+}
+
+@-webkit-keyframes js-circle-bounce {
+    0% {
+        top: -10px;
+        right: 20px;
+    }
+    25% {
+        top: 20px;
+        right: 80px;
+    }
+    75% {
+        top: -20px;
+        right: 100px;
+    }
+    100% {
+        top: 40px;
+        right: 130px;
+    }
 }
 
 @keyframes js-circle-bounce {
@@ -146,4 +176,6 @@ div {
         right: 130px;
     }
 }
+ 
+
  
