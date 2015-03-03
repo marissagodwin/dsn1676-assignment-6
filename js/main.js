@@ -35,8 +35,8 @@ $circle.on('animationend', function () {
 });
 
 $btnAppend.on('click', function () {
-    $list.toggleClass('js-append') 
     
     var $li = $('<li>').html('New List Items');
-    $list.append($li);
+    $list.prepend($li);
+    $li.addClass ('new-li')
   });

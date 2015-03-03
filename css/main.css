@@ -96,8 +96,21 @@ div {
   border: 1px solid mediumpurple;
 
   color: mediumpurple;
+  overflow: hidden;
 }
 
+.new-li {
+    animation: js-append 1s ease-in;
+}
+
+@keyframes js-append {
+    0% {
+        max-height: 0px;
+    }
+    100% {
+       max-height: 4em;
+    }
+}
 
 .js-show-hide {
     opacity: 0;
@@ -133,8 +146,4 @@ div {
         right: 130px;
     }
 }
-
-.js-append {
-    animation: js-append 3s linear;
-}
-    
+ 
